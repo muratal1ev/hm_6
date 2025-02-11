@@ -1,0 +1,76 @@
+{% load static %}
+
+<footer>
+    <div class="footer__area">
+        <div class="container">
+            <div class="footer__top footer__top-three fix">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="footer__widget footer__about text-center">
+                            <a href="index.html" class="footer__logo"><img src="assets/img/logo/logo-white.svg"
+                                    alt="img"></a>
+                            <p class="footer__widget-text">{{ settings_id.description_contact }}</p>
+                            <ul class="footer-menu-list">
+                                <li>
+                                    <a href="index.html">
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="project.html">
+                                        Project
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="team.html">
+                                        TEAM
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="blog.html">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                            <form action="mail.php" method="POST" class="newsletter__form ajax-contact">
+                                <div class="form-group">
+                                    <label class="form-icon-left text-theme"><i
+                                            class="fas fa-envelope-open"></i></label>
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="Email address">
+                                </div>
+                                <button type="submit" class="icon-btn">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </form>
+                            <div class="footer__social">
+                                <ul class="list-wrap">
+                                    <li><a href="https://www.facebook.com/" target="_blank"><i
+                                                class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li><a href="https://instagram.com" target="_blank"><i
+                                                class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://www.behance.com/" target="_blank"><i
+                                                class="fab fa-behance"></i></a></li>
+                                    <li><a href="https://www.youtube.com/" target="_blank"><i
+                                                class="fab fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom footer__bottom-two">
+            <div class="container text-center">
+                Copyright 2024 by <a href="#">Alvido.</a> All rights reserved.
+            </div>
+        </div>
+    </div>
+</footer>

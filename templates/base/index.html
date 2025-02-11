@@ -1,0 +1,1087 @@
+{% extends 'include/homepage.html' %}
+{% load static %}
+{% block content %}
+
+    <!--Preloader-->
+    {% include 'include/header.html' %}
+    <!-- header-area-end -->
+
+    <!-- main-area -->
+    <main class="fix">
+
+    <!--==============================
+    Hero Area
+    ==============================-->
+    <section class="hero-wrapper hero-3">
+        <div class="container custom-container2">
+            <div class="hero-style3">
+                <div class="row">
+                    <div class="col-lg-12">                        
+                        <h1 class="hero-title wow img-custom-anim-top text-white">{{ settings_id.title }}</h1>
+                        <div class="row justify-content-md-between justify-content-center align-items-center text-center gy-3">
+                            <div class="col-auto">
+                                <p class="hero-text wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.2s">{{ settings_id.description }}</p>
+                            </div>
+                            <div class="col-auto">
+                                <div class="social__wrap wow img-custom-anim-right" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                                    <ul class="list-wrap">
+                                        <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="https://www.behance.com/" target="_blank"><i class="fab fa-behance"></i></a></li>
+                                        <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-thumb3-1 wow img-custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.3s">
+                    <div class="thumb gsap-parallax">
+                        <img src="assets/img/hero/hero-3-1.jpg" alt="hero">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--======== / Hero Section ========-->
+
+    <!--==============================
+    Service Area 3
+    ==============================-->
+    <section class="pt-120 overflow-hidden position-relative">
+        <div class="service-bg-shape3-1 d-xl-block d-none ">
+            <img src="assets/img/icon/service-icon3-1.png" alt="img">
+        </div>
+        <div class="service-bg-shape3-2 d-xl-block d-none ">
+            <img src="assets/img/icon/service-icon3-2.png" alt="img">
+        </div>
+        <div class="container">
+            <div class="section__title mb-60 wow img-custom-anim-top text-center">
+                <div class="sub-title text-white">What we do</div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">                    
+                    <ul class="service-list-wrap3 wow img-custom-anim-top">
+                        <li class="single-service-list">
+                            <p class="service-list-number">01</p>
+                            <h4 class="title"><a href="service-details.html">Game Server</a></h4>
+                        </li>
+                        <li class="single-service-list">
+                            <p class="service-list-number">02</p>
+                            <h4 class="title"><a href="service-details.html">Game Testing</a></h4>
+                        </li>
+                        <li class="single-service-list">
+                            <p class="service-list-number">03</p>
+                            <h4 class="title"><a href="service-details.html">AR/VR Integration</a></h4>
+                        </li>
+                        <li class="single-service-list">
+                            <p class="service-list-number">04</p>
+                            <h4 class="title"><a href="service-details.html">Game Design</a></h4>
+                        </li>
+                        <li class="single-service-list">
+                            <p class="service-list-number">05</p>
+                            <h4 class="title"><a href="service-details.html">Game Development</a></h4>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--======== / Service Area 3 ========-->
+
+    <!--==============================
+    Marquee Area 3
+    ==============================-->
+    <div class="marquee-area-3 slider__marquee clearfix marquee-wrap overflow-hidden pt-120 pb-120">
+        <div class="marquee_mode marquee__group">
+            <h3 class="project-title m-item"><a href="service-details.html"> Gaming Community</a><span class="skull-icon"><img src="assets/img/icon/skull-icon2.png" alt="img"></span>
+            <a href="service-details.html">Inclusive Gaming</a><span class="skull-icon"><img src="assets/img/icon/skull-icon2.png" alt="img"></span>
+            </h3>
+            <h3 class="project-title m-item"><a href="service-details.html"> Gaming Community</a><span class="skull-icon"><img src="assets/img/icon/skull-icon2.png" alt="img"></span>
+            <a href="service-details.html">Inclusive Gaming</a><span class="skull-icon"><img src="assets/img/icon/skull-icon2.png" alt="img"></span>
+            </h3>
+        </div>
+    </div>
+    <!--======== / Marquee Area 2 ========-->
+
+    <!--==============================
+    Project Area 3
+    ==============================-->
+    <section class="project-area-3 overflow-hidden">
+        <div class="container-fluid p-0">
+            <div class="project-slider3 overflow-hidden">
+                <div class="tg-swiper__slider swiper-container" id="projectSlider3" data-swiper-options='{
+                    "loop": true,
+                    "autoplay": { "delay": 5000 },
+                    "speed": 1000,
+                    "breakpoints": {
+                        "0": {
+                            "spaceBetween": 0,
+                            "slidesPerView": 1
+                        },
+                        "375": {
+                            "spaceBetween": 0,
+                            "slidesPerView": 1
+                        },
+                        "575": {
+                            "spaceBetween": 0,
+                            "slidesPerView": 1
+                        },
+                        "600": {
+                            "spaceBetween": 0,
+                            "slidesPerView": 2
+                        },
+                        "768": {
+                            "spaceBetween": 0,
+                            "slidesPerView": 3
+                        },
+                        "992": {
+                            "spaceBetween": 0,
+                            "slidesPerView": 4
+                        },
+                        "1200": {
+                            "spaceBetween": 0,
+                            "slidesPerView": 4
+                        }
+                    }}'>
+    
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="project-card3">
+                                <div class="project-thumb">
+                                    <a href="project-details.html" class="thumb gsap-parallax">
+                                        <img src="assets/img/project/project3-1.png" alt="img">
+                                    </a>
+                                </div>
+                                <div class="project-card-details">
+                                    <a href="contact.html" class="btn">
+                                        download <i class="fas fa-arrow-right"></i>
+                                        <span class="line1"></span>
+                                        <span class="line2"></span>
+                                        <span class="line3"></span>
+                                        <span class="line4"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project-card3">
+                                <div class="project-thumb">
+                                    <a href="project-details.html" class="thumb gsap-parallax">
+                                        <img src="assets/img/project/project3-2.png" alt="img">
+                                    </a>
+                                </div>
+                                <div class="project-card-details">
+                                    <a href="contact.html" class="btn">
+                                        download <i class="fas fa-arrow-right"></i>
+                                        <span class="line1"></span>
+                                        <span class="line2"></span>
+                                        <span class="line3"></span>
+                                        <span class="line4"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project-card3">
+                                <div class="project-thumb">
+                                    <a href="project-details.html" class="thumb gsap-parallax">
+                                        <img src="assets/img/project/project3-3.png" alt="img">
+                                    </a>
+                                </div>
+                                <div class="project-card-details">
+                                    <a href="contact.html" class="btn">
+                                        download <i class="fas fa-arrow-right"></i>
+                                        <span class="line1"></span>
+                                        <span class="line2"></span>
+                                        <span class="line3"></span>
+                                        <span class="line4"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project-card3">
+                                <div class="project-thumb">
+                                    <a href="project-details.html" class="thumb gsap-parallax">
+                                        <img src="assets/img/project/project3-4.png" alt="img">
+                                    </a>
+                                </div>
+                                <div class="project-card-details">
+                                    <a href="contact.html" class="btn">
+                                        download <i class="fas fa-arrow-right"></i>
+                                        <span class="line1"></span>
+                                        <span class="line2"></span>
+                                        <span class="line3"></span>
+                                        <span class="line4"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project-card3">
+                                <div class="project-thumb">
+                                    <a href="project-details.html" class="thumb gsap-parallax">
+                                        <img src="assets/img/project/project3-1.png" alt="img">
+                                    </a>
+                                </div>
+                                <div class="project-card-details">
+                                    <a href="contact.html" class="btn">
+                                        download <i class="fas fa-arrow-right"></i>
+                                        <span class="line1"></span>
+                                        <span class="line2"></span>
+                                        <span class="line3"></span>
+                                        <span class="line4"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project-card3">
+                                <div class="project-thumb">
+                                    <a href="project-details.html" class="thumb gsap-parallax">
+                                        <img src="assets/img/project/project3-2.png" alt="img">
+                                    </a>
+                                </div>
+                                <div class="project-card-details">
+                                    <a href="contact.html" class="btn">
+                                        download <i class="fas fa-arrow-right"></i>
+                                        <span class="line1"></span>
+                                        <span class="line2"></span>
+                                        <span class="line3"></span>
+                                        <span class="line4"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project-card3">
+                                <div class="project-thumb">
+                                    <a href="project-details.html" class="thumb gsap-parallax">
+                                        <img src="assets/img/project/project3-3.png" alt="img">
+                                    </a>
+                                </div>
+                                <div class="project-card-details">
+                                    <a href="contact.html" class="btn">
+                                        download <i class="fas fa-arrow-right"></i>
+                                        <span class="line1"></span>
+                                        <span class="line2"></span>
+                                        <span class="line3"></span>
+                                        <span class="line4"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project-card3">
+                                <div class="project-thumb">
+                                    <a href="project-details.html" class="thumb gsap-parallax">
+                                        <img src="assets/img/project/project3-4.png" alt="img">
+                                    </a>
+                                </div>
+                                <div class="project-card-details">
+                                    <a href="contact.html" class="btn">
+                                        download <i class="fas fa-arrow-right"></i>
+                                        <span class="line1"></span>
+                                        <span class="line2"></span>
+                                        <span class="line3"></span>
+                                        <span class="line4"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--======== / Project Area 3 ========-->
+
+    <!--==============================
+    CTA Area
+    ==============================-->
+    <section class="cta-area-1">
+        <div class="container">
+            <div class="row gx-50 justify-content-between">
+                <div class="col-xl-5">
+                    <div class="cta-content-wrap pt-120 pb-120">
+                        <div class="section__title mb-0">
+                            <h2 class="title text-white">{{ settings_id.title_cool }}
+                            </h2>
+                            <p class="sec-text text-white">{{ settings_id.description_cool }}</p>
+                            <div class="tg-button-wrap mt-50">
+                                <a href="contact.html" class="btn btn-two">
+                                    NEXT CAN BE YOU <i class="fas fa-arrow-right"></i>
+                                    <span class="line1"></span>
+                                    <span class="line2"></span>
+                                    <span class="line3"></span>
+                                    <span class="line4"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+                <div class="col-xl-6 align-self-end">
+                    <div class="cta-thumb1-1">
+                        <img src="assets/img/others/cta1-1.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--======== / CTA Area ========-->
+
+    <!--==============================
+    Video Area 2
+    ==============================-->
+    <section class="video-area-2 overflow-hidden">
+        <div class="video-thumb-box2 gsap-parallax">
+            <img src="assets/img/others/video2-1.png" alt="img">
+            <a href="https://www.youtube.com/watch?v=vvNwlRLjLkU" class="icon-btn popup-video"><i class="fas fa-play"></i>
+            </a> 
+        </div>
+    </section>
+    <!--======== / Video Area 2 ========-->
+
+    <!--==============================
+    Counter Area
+    ==============================-->
+    <section class="pb-120 pt-120 black-bg counter-area-1 overflow-hidden">
+        <div class="container">
+            <div class="counter__wrap">
+                <div class="title-icon">
+                    <img src="{{ settings_id.image.url }}" alt="img">
+                </div>
+                <div class="counter-wrap-details">
+                    <div class="section__title mb-20">
+                        <h2 class="title text-white">{{ settings_id.title_mussion }}
+                        </h2>
+                    </div>
+                    <div class="row gy-5">
+                        <div class="col-md-6">
+                            <div class="counter-card2">
+                                <h3 class="counter-card_title wow img-custom-anim-bottom"><span class="counter-number">370</span>+</h3>
+                                <p class="counter-card_text">Creating and optimizing websites</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="counter-card2">
+                                <h3 class="counter-card_title wow img-custom-anim-bottom"><span class="counter-number">10</span>+</h3>
+                                <p class="counter-card_text">Brand awareness and recognition</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="counter-card2">
+                                <h3 class="counter-card_title wow img-custom-anim-bottom"><span class="counter-number">4</span>X</h3>
+                                <p class="counter-card_text">Measure and analyze performance</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="counter-card2">
+                                <h3 class="counter-card_title wow img-custom-anim-bottom"><span class="counter-number">50</span>%</h3>
+                                <p class="counter-card_text">Increase conversions and sales</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--======== / Counter Section ========-->
+
+    <!--==============================
+    Team Area 3
+    ==============================-->
+    <section class="team-area-3 pt-120 pb-120 black2-bg">
+        <div class="container">
+            <div class="section__title text-center mb-60 wow img-custom-anim-top">
+                <div class="sub-title text-theme">{{ settings_id.title_team }}</div>
+                <h2 class="title text-white">{{ settings_id.title_avenser }}</h2>
+            </div>
+            <div class="team-slider3 overflow-hidden">
+                <div class="tg-swiper__slider swiper-container" id="teamSlider3" data-swiper-options='{
+                    "loop": true,
+                    "autoplay": { "delay": 5000 },
+                    "speed": 1000,
+                    "breakpoints": {
+                        "0": {
+                            "spaceBetween": 30,
+                            "slidesPerView": 1
+                        },
+                        "375": {
+                            "spaceBetween": 30,
+                            "slidesPerView": 1
+                        },
+                        "575": {
+                            "spaceBetween": 30,
+                            "slidesPerView": 1
+                        },
+                        "600": {
+                            "spaceBetween": 30,
+                            "slidesPerView": 2
+                        },
+                        "768": {
+                            "spaceBetween": 30,
+                            "slidesPerView": 2
+                        },
+                        "992": {
+                            "spaceBetween": 30,
+                            "slidesPerView": 4
+                        },
+                        "1200": {
+                            "spaceBetween": 30,
+                            "slidesPerView": 4
+                        }
+                    }}'>
+
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="team-card3">
+                                <div class="team-thumb">
+                                    <a href="team-details.html" class="thumb gsap-parallax">
+                                        <img src="assets/img/team/team-2-1.jpg" alt="img">
+                                        <span class="sub-title">founder</span>
+                                    </a>
+                                </div>
+                                <div class="team-card-details">
+                                    <h4 class="title"><a href="team-details.html">Anna marry scott</a></h4>
+                                    <span class="team-card-text">Measure and analyze performance</span>
+                                    <div class="social-wrap">
+                                        <a target="_blank" href="https://facebook.com/" tabindex="-1"><i class="fab fa-facebook-f"></i></a>
+                                        <a target="_blank" href="https://twitter.com/" tabindex="-1"><i class="fab fa-twitter"></i></a>
+                                        <a target="_blank" href="https://instagram.com/" tabindex="-1"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="team-card3">
+                                <div class="team-thumb">
+                                    <a href="team-details.html" class="thumb gsap-parallax">
+                                        <img src="assets/img/team/team-2-2.jpg" alt="img">
+                                        <span class="sub-title">CEO</span>
+                                    </a>
+                                </div>
+                                <div class="team-card-details">
+                                    <h4 class="title"><a href="team-details.html">James tylor</a></h4>
+                                    <span class="team-card-text">Measure and analyze performance</span>
+                                    <div class="social-wrap">
+                                        <a target="_blank" href="https://facebook.com/" tabindex="-1"><i class="fab fa-facebook-f"></i></a>
+                                        <a target="_blank" href="https://twitter.com/" tabindex="-1"><i class="fab fa-twitter"></i></a>
+                                        <a target="_blank" href="https://instagram.com/" tabindex="-1"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="team-card3">
+                                <div class="team-thumb">
+                                    <a href="team-details.html" class="thumb gsap-parallax">
+                                        <img src="assets/img/team/team-2-3.jpg" alt="img">
+                                        <span class="sub-title">Designer</span>
+                                    </a>
+                                </div>
+                                <div class="team-card-details">
+                                    <h4 class="title"><a href="team-details.html">Katty williams</a></h4>
+                                    <span class="team-card-text">Measure and analyze performance</span>
+                                    <div class="social-wrap">
+                                        <a target="_blank" href="https://facebook.com/" tabindex="-1"><i class="fab fa-facebook-f"></i></a>
+                                        <a target="_blank" href="https://twitter.com/" tabindex="-1"><i class="fab fa-twitter"></i></a>
+                                        <a target="_blank" href="https://instagram.com/" tabindex="-1"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="team-card3">
+                                <div class="team-thumb">
+                                    <a href="team-details.html" class="thumb gsap-parallax">
+                                        <img src="assets/img/team/team-2-4.jpg" alt="img">
+                                        <span class="sub-title">developer</span>
+                                    </a>
+                                </div>
+                                <div class="team-card-details">
+                                    <h4 class="title"><a href="team-details.html">harry newman</a></h4>
+                                    <span class="team-card-text">Measure and analyze performance</span>
+                                    <div class="social-wrap">
+                                        <a target="_blank" href="https://facebook.com/" tabindex="-1"><i class="fab fa-facebook-f"></i></a>
+                                        <a target="_blank" href="https://twitter.com/" tabindex="-1"><i class="fab fa-twitter"></i></a>
+                                        <a target="_blank" href="https://instagram.com/" tabindex="-1"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="team-card3">
+                                <div class="team-thumb">
+                                    <a href="team-details.html" class="thumb gsap-parallax">
+                                        <img src="assets/img/team/team-2-1.jpg" alt="img">
+                                        <span class="sub-title">founder</span>
+                                    </a>
+                                </div>
+                                <div class="team-card-details">
+                                    <h4 class="title"><a href="team-details.html">Anna marry scott</a></h4>
+                                    <span class="team-card-text">Measure and analyze performance</span>
+                                    <div class="social-wrap">
+                                        <a target="_blank" href="https://facebook.com/" tabindex="-1"><i class="fab fa-facebook-f"></i></a>
+                                        <a target="_blank" href="https://twitter.com/" tabindex="-1"><i class="fab fa-twitter"></i></a>
+                                        <a target="_blank" href="https://instagram.com/" tabindex="-1"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="team-card3">
+                                <div class="team-thumb">
+                                    <a href="team-details.html" class="thumb gsap-parallax">
+                                        <img src="assets/img/team/team-2-2.jpg" alt="img">
+                                        <span class="sub-title">CEO</span>
+                                    </a>
+                                </div>
+                                <div class="team-card-details">
+                                    <h4 class="title"><a href="team-details.html">James tylor</a></h4>
+                                    <span class="team-card-text">Measure and analyze performance</span>
+                                    <div class="social-wrap">
+                                        <a target="_blank" href="https://facebook.com/" tabindex="-1"><i class="fab fa-facebook-f"></i></a>
+                                        <a target="_blank" href="https://twitter.com/" tabindex="-1"><i class="fab fa-twitter"></i></a>
+                                        <a target="_blank" href="https://instagram.com/" tabindex="-1"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="team-card3">
+                                <div class="team-thumb">
+                                    <a href="team-details.html" class="thumb gsap-parallax">
+                                        <img src="assets/img/team/team-2-3.jpg" alt="img">
+                                        <span class="sub-title">Designer</span>
+                                    </a>
+                                </div>
+                                <div class="team-card-details">
+                                    <h4 class="title"><a href="team-details.html">Katty williams</a></h4>
+                                    <span class="team-card-text">Measure and analyze performance</span>
+                                    <div class="social-wrap">
+                                        <a target="_blank" href="https://facebook.com/" tabindex="-1"><i class="fab fa-facebook-f"></i></a>
+                                        <a target="_blank" href="https://twitter.com/" tabindex="-1"><i class="fab fa-twitter"></i></a>
+                                        <a target="_blank" href="https://instagram.com/" tabindex="-1"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="team-card3">
+                                <div class="team-thumb">
+                                    <a href="team-details.html" class="thumb gsap-parallax">
+                                        <img src="assets/img/team/team-2-4.jpg" alt="img">
+                                        <span class="sub-title">developer</span>
+                                    </a>
+                                </div>
+                                <div class="team-card-details">
+                                    <h4 class="title"><a href="team-details.html">harry newman</a></h4>
+                                    <span class="team-card-text">Measure and analyze performance</span>
+                                    <div class="social-wrap">
+                                        <a target="_blank" href="https://facebook.com/" tabindex="-1"><i class="fab fa-facebook-f"></i></a>
+                                        <a target="_blank" href="https://twitter.com/" tabindex="-1"><i class="fab fa-twitter"></i></a>
+                                        <a target="_blank" href="https://instagram.com/" tabindex="-1"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--======== / Team Area 3 ========-->
+
+    <!--==============================
+    Work Area
+    ==============================-->
+    <section class="work-area-1 overflow-hidden pb-120 black-bg position-relative z-1">
+        <div class="container">
+            <div class="section__title text-center mb-0">
+                <h2 class="shadow-title">{{ settings_id.title_works }}</h2>
+            </div>
+            <ul class="work-card-wrap">
+                <li class="work-card">
+                    <h4 class="work-card-title">Upcoming Game Release</h4>
+                    <span class="work-card-text">/ CyberSaga Chronicles</span>
+                    <span class="work-card-tag">Action - Adventure</span>
+                    <div class="hover-wrap" data-background="assets/img/bg/work-card-bg1-1.png">
+                        <div class="slider__marquee clearfix marquee-wrap">
+                            <div class="marquee_mode marquee__group">
+                                <h3 class="work-card-title-item m-item"><a class="work-card-title" href="project-details.html">Upcoming Game Release</a> <span>/</span></h3>
+                                <h3 class="work-card-title-item m-item"><a class="work-card-title" href="project-details.html">Upcoming Game Release</a> <span>/</span></h3>
+                                <h3 class="work-card-title-item m-item"><a class="work-card-title" href="project-details.html">Upcoming Game Release</a> <span>/</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="work-card">
+                    <h4 class="work-card-title">The Rise of Cloud Gaming</h4>
+                    <span class="work-card-text">/ Multiplayer</span>
+                    <span class="work-card-tag">Adventure - pvp</span>
+                    <div class="hover-wrap" data-background="assets/img/bg/work-card-bg1-1.png">
+                        <div class="slider__marquee clearfix marquee-wrap">
+                            <div class="marquee_mode marquee__group">
+                                <h3 class="work-card-title-item m-item"><a class="work-card-title" href="project-details.html">The Rise of Cloud Gaming</a> <span>/</span></h3>
+                                <h3 class="work-card-title-item m-item"><a class="work-card-title" href="project-details.html">The Rise of Cloud Gaming</a> <span>/</span></h3>
+                                <h3 class="work-card-title-item m-item"><a class="work-card-title" href="project-details.html">The Rise of Cloud Gaming</a> <span>/</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="work-card">
+                    <h4 class="work-card-title">Behind the Scene</h4>
+                    <span class="work-card-text">/ Infinity Forge</span>
+                    <span class="work-card-tag">Strategy</span>
+                    <div class="hover-wrap" data-background="assets/img/bg/work-card-bg1-1.png">
+                        <div class="slider__marquee clearfix marquee-wrap">
+                            <div class="marquee_mode marquee__group">
+                                <h3 class="work-card-title-item m-item"><a class="work-card-title" href="project-details.html">Behind the Scene</a> <span>/</span></h3>
+                                <h3 class="work-card-title-item m-item"><a class="work-card-title" href="project-details.html">Behind the Scene</a> <span>/</span></h3>
+                                <h3 class="work-card-title-item m-item"><a class="work-card-title" href="project-details.html">Behind the Scene</a> <span>/</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="work-card">
+                    <h4 class="work-card-title">Gaming Event Spotlight</h4>
+                    <span class="work-card-text">/ 2023 Recap</span>
+                    <span class="work-card-tag">Sports - Racing</span>
+                    <div class="hover-wrap" data-background="assets/img/bg/work-card-bg1-1.png">
+                        <div class="slider__marquee clearfix marquee-wrap">
+                            <div class="marquee_mode marquee__group">
+                                <h3 class="work-card-title-item m-item"><a class="work-card-title" href="project-details.html">Gaming Event Spotlight</a> <span>/</span></h3>
+                                <h3 class="work-card-title-item m-item"><a class="work-card-title" href="project-details.html">Gaming Event Spotlight</a> <span>/</span></h3>
+                                <h3 class="work-card-title-item m-item"><a class="work-card-title" href="project-details.html">Gaming Event Spotlight</a> <span>/</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="work-card">
+                    <h4 class="work-card-title">Gaming for a Cause</h4>
+                    <span class="work-card-text">/ Community Spotlight</span>
+                    <span class="work-card-tag">battle royale - pvp</span>
+                    <div class="hover-wrap" data-background="assets/img/bg/work-card-bg1-1.png">
+                        <div class="slider__marquee clearfix marquee-wrap">
+                            <div class="marquee_mode marquee__group">
+                                <h3 class="work-card-title-item m-item"><a class="work-card-title" href="project-details.html">Gaming for a Cause</a> <span>/</span></h3>
+                                <h3 class="work-card-title-item m-item"><a class="work-card-title" href="project-details.html">Gaming for a Cause</a> <span>/</span></h3>
+                                <h3 class="work-card-title-item m-item"><a class="work-card-title" href="project-details.html">Gaming for a Cause</a> <span>/</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!--======== / Process Area ========-->
+
+    <!--==============================
+    Testimonial Area 3
+    ==============================-->
+    <section class="testimonial-area-3 black2-bg pt-120 pb-120 position-relative overflow-hidden">
+        <div class="container">
+            <div class="section__title mb-60 wow img-custom-anim-left">
+                <div class="sub-title text-theme">
+                    {{ settings_id.title_testimonials }}
+                </div>
+                <h2 class="title text-white">{{ settings_id.title_about }}</h2>
+            </div>
+            <div class="testi-slider2 overflow-hidden">
+                <div class="tg-swiper__slider swiper-container" id="testiSlider3" data-swiper-options='{
+                    "loop": true,
+                    "autoplay": { "delay": 5000 },
+                    "speed": 1000,
+                    "breakpoints": {
+                        "0": {
+                            "spaceBetween": 30,
+                            "slidesPerView": 1
+                        },
+                        "375": {
+                            "spaceBetween": 30,
+                            "slidesPerView": 1
+                        },
+                        "575": {
+                            "spaceBetween": 30,
+                            "slidesPerView": 1
+                        },
+                        "768": {
+                            "spaceBetween": 30,
+                            "slidesPerView": 2
+                        },
+                        "992": {
+                            "spaceBetween": 30,
+                            "slidesPerView": 2
+                        },
+                        "1200": {
+                            "spaceBetween": 30,
+                            "slidesPerView": 3
+                        }
+                    }}'>
+
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial-card3">
+                                <div class="testimonial-card_thumb">
+                                    <img src="assets/img/testimonial/3-1.png" alt="img">
+                                </div>
+                                <div class="testimonial-card-details">
+                                    <div class="testimonial-card_author">
+                                        <div class="media-body">
+                                            <h4 class="testimonial-card_title">Nick Davis</h4>
+                                            <p class="testimonial-card_desig">UI/UX Designer</p>
+                                        </div>
+                                    </div>
+                                    <p class="testimonial-card_text">Driven by innovation and creativity, we're constantly evolving and expanding our platform to bring you the latest and greatest in gaming.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card3">
+                                <div class="testimonial-card_thumb">
+                                    <img src="assets/img/testimonial/3-2.png" alt="img">
+                                </div>
+                                <div class="testimonial-card-details">
+                                    <div class="testimonial-card_author">
+                                        <div class="media-body">
+                                            <h4 class="testimonial-card_title">Miranda Halim</h4>
+                                            <p class="testimonial-card_desig">founder</p>
+                                        </div>
+                                    </div>
+                                    <p class="testimonial-card_text">Driven by innovation and creativity, we're constantly evolving and expanding our platform to bring you the latest and greatest in gaming.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card3">
+                                <div class="testimonial-card_thumb">
+                                    <img src="assets/img/testimonial/3-3.png" alt="img">
+                                </div>
+                                <div class="testimonial-card-details">
+                                    <div class="testimonial-card_author">
+                                        <div class="media-body">
+                                            <h4 class="testimonial-card_title">Alonso Dowson</h4>
+                                            <p class="testimonial-card_desig">ceo</p>
+                                        </div>
+                                    </div>
+                                    <p class="testimonial-card_text">Driven by innovation and creativity, we're constantly evolving and expanding our platform to bring you the latest and greatest in gaming.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card3">
+                                <div class="testimonial-card_thumb">
+                                    <img src="assets/img/testimonial/3-1.png" alt="img">
+                                </div>
+                                <div class="testimonial-card-details">
+                                    <div class="testimonial-card_author">
+                                        <div class="media-body">
+                                            <h4 class="testimonial-card_title">Nick Davis</h4>
+                                            <p class="testimonial-card_desig">UI/UX Designer</p>
+                                        </div>
+                                    </div>
+                                    <p class="testimonial-card_text">Driven by innovation and creativity, we're constantly evolving and expanding our platform to bring you the latest and greatest in gaming.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card3">
+                                <div class="testimonial-card_thumb">
+                                    <img src="assets/img/testimonial/3-2.png" alt="img">
+                                </div>
+                                <div class="testimonial-card-details">
+                                    <div class="testimonial-card_author">
+                                        <div class="media-body">
+                                            <h4 class="testimonial-card_title">Miranda Halim</h4>
+                                            <p class="testimonial-card_desig">founder</p>
+                                        </div>
+                                    </div>
+                                    <p class="testimonial-card_text">Driven by innovation and creativity, we're constantly evolving and expanding our platform to bring you the latest and greatest in gaming.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card3">
+                                <div class="testimonial-card_thumb">
+                                    <img src="assets/img/testimonial/3-3.png" alt="img">
+                                </div>
+                                <div class="testimonial-card-details">
+                                    <div class="testimonial-card_author">
+                                        <div class="media-body">
+                                            <h4 class="testimonial-card_title">Alonso Dowson</h4>
+                                            <p class="testimonial-card_desig">ceo</p>
+                                        </div>
+                                    </div>
+                                    <p class="testimonial-card_text">Driven by innovation and creativity, we're constantly evolving and expanding our platform to bring you the latest and greatest in gaming.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--======== / Testimonial Area 3 ========-->
+
+    <!--==============================
+    Contact Area
+    ==============================-->
+    <section class="contact-area-1 pt-120 pb-120 overflow-hidden">        
+        <div class="container">
+            <div class="contact_title section__title mb-60">
+                <h2 class="title text-white mb-0 wow img-custom-anim-left">{{ settings_id.title_contact }}</h2>
+                <h2 class="title text-theme mb-0 wow img-custom-anim-right"><span class="text-stroke">{{ settings_id.title_have }}?</span></h2>
+            </div>
+            <div class="row gy-40">
+                <div class="col-lg-8">
+                    <div class="contact-form-wrap" style="background-color: aliceblue;">
+                        <div class="section__title mb-30">
+                            <h4 class="title text-white">WHAT CAN WE DO FOR YOU?</h4>
+                        </div>
+                        <form method="POST" class="contact__form ajax-contact" style="color: azure;">
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                            <button type="submit" class="btn mt-60">
+                                Working with us <i class="fas fa-arrow-right"></i>
+                                <span class="line1"></span>
+                                <span class="line2"></span>
+                                <span class="line3"></span>
+                                <span class="line4"></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="section__title mb-0 wow img-custom-anim-left">
+                        <p class="sec-text text-white mt-0">{{ settings_id.description_contact }}</p>
+                        <div class="social__wrap mt-40">
+                            <ul class="list-wrap justify-content-start">
+                                <li>
+                                    <a target="_blank" href="https://facebook.com/" tabindex="-1"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://twitter.com/" tabindex="-1"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://instagram.com/" tabindex="-1"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://google.com/" tabindex="-1"><i class="fab fa-google"></i></a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://linkedin.com/" tabindex="-1"><i class="fab fa-linkedin"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--======== / Contact Section ========-->
+
+    <!--==============================
+    Instagram Area 1
+    ==============================-->
+    <section class="instagram-area-1 overflow-hidden">
+        <div class="container-fluid p-0">
+            <div class="instagram-slider1 overflow-hidden">
+                <div class="tg-swiper__slider swiper-container" id="instagramSlider1" data-swiper-options='{
+                    "loop": true,
+                    "autoplay": { "delay": 5000 },
+                    "speed": 1000,
+                    "breakpoints": {
+                        "0": {
+                            "spaceBetween": 0,
+                            "slidesPerView": 2
+                        },
+                        "375": {
+                            "spaceBetween": 0,
+                            "slidesPerView": 2
+                        },
+                        "575": {
+                            "spaceBetween": 0,
+                            "slidesPerView": 2
+                        },
+                        "600": {
+                            "spaceBetween": 0,
+                            "slidesPerView": 2
+                        },
+                        "768": {
+                            "spaceBetween": 0,
+                            "slidesPerView": 3
+                        },
+                        "992": {
+                            "spaceBetween": 0,
+                            "slidesPerView": 4
+                        },
+                        "1200": {
+                            "spaceBetween": 0,
+                            "slidesPerView": 6
+                        }
+                    }}'>
+    
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="instagram-card">
+                                <div class="instagram-thumb">
+                                    <img src="assets/img/instagram/1-1.png" alt="img">
+                                </div>
+                                <div class="instagram-card-details">
+                                    <a href="https://instagram.com/" class="icon-btn">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="instagram-card">
+                                <div class="instagram-thumb">
+                                    <img src="assets/img/instagram/1-2.png" alt="img">
+                                </div>
+                                <div class="instagram-card-details">
+                                    <a href="https://instagram.com/" class="icon-btn">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="instagram-card">
+                                <div class="instagram-thumb">
+                                    <img src="assets/img/instagram/1-3.png" alt="img">
+                                </div>
+                                <div class="instagram-card-details">
+                                    <a href="https://instagram.com/" class="icon-btn">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="instagram-card">
+                                <div class="instagram-thumb">
+                                    <img src="assets/img/instagram/1-4.png" alt="img">
+                                </div>
+                                <div class="instagram-card-details">
+                                    <a href="https://instagram.com/" class="icon-btn">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="instagram-card">
+                                <div class="instagram-thumb">
+                                    <img src="assets/img/instagram/1-5.png" alt="img">
+                                </div>
+                                <div class="instagram-card-details">
+                                    <a href="https://instagram.com/" class="icon-btn">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="instagram-card">
+                                <div class="instagram-thumb">
+                                    <img src="assets/img/instagram/1-6.png" alt="img">
+                                </div>
+                                <div class="instagram-card-details">
+                                    <a href="https://instagram.com/" class="icon-btn">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="instagram-card">
+                                <div class="instagram-thumb">
+                                    <img src="assets/img/instagram/1-1.png" alt="img">
+                                </div>
+                                <div class="instagram-card-details">
+                                    <a href="https://instagram.com/" class="icon-btn">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="instagram-card">
+                                <div class="instagram-thumb">
+                                    <img src="assets/img/instagram/1-2.png" alt="img">
+                                </div>
+                                <div class="instagram-card-details">
+                                    <a href="https://instagram.com/" class="icon-btn">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="instagram-card">
+                                <div class="instagram-thumb">
+                                    <img src="assets/img/instagram/1-3.png" alt="img">
+                                </div>
+                                <div class="instagram-card-details">
+                                    <a href="https://instagram.com/" class="icon-btn">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="instagram-card">
+                                <div class="instagram-thumb">
+                                    <img src="assets/img/instagram/1-4.png" alt="img">
+                                </div>
+                                <div class="instagram-card-details">
+                                    <a href="https://instagram.com/" class="icon-btn">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="instagram-card">
+                                <div class="instagram-thumb">
+                                    <img src="assets/img/instagram/1-5.png" alt="img">
+                                </div>
+                                <div class="instagram-card-details">
+                                    <a href="https://instagram.com/" class="icon-btn">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="instagram-card">
+                                <div class="instagram-thumb">
+                                    <img src="assets/img/instagram/1-6.png" alt="img">
+                                </div>
+                                <div class="instagram-card-details">
+                                    <a href="https://instagram.com/" class="icon-btn">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--======== / Instagram Area 1 ========-->
+
+    </main>
+    <!-- main-area-end -->
+
+
+    <!-- footer-area -->
+    {% include 'include/footer.html' %}
+    <!-- footer-area-end -->
+    <!-- JS here -->
+
+    {% endblock %}

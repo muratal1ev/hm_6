@@ -1,0 +1,269 @@
+{% extends 'include/homepage.html' %}
+{% load static %}
+{% block content %}
+
+<!--Preloader-->
+{% include 'include/header.html' %}
+<main class="fix">
+    <section class="breadcrumb__area fix" data-background="assets/img/bg/breadcrumb-bg.png">
+        <div class="breadcrumb__bg-1-1" data-background="assets/img/hero/hero-bg1-1.png"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-7">
+                    <div class="breadcrumb__content">
+                        <nav class="breadcrumb">
+                            <span property="itemListElement" typeof="ListItem">
+                                <a href="index.html">Home</a>
+                            </span>
+                            <span class="breadcrumb-separator"><i class="fas fa-angle-right"></i></span>
+                            <span property="itemListElement" typeof="ListItem">Contact</span>
+                        </nav>
+                        <h3 class="title">get in touch</h3>
+                    </div>
+                </div>
+                <div class="col-xl-5 d-xl-block d-none">
+                    <div class="breadcrumb__img">
+                        <div class="thumb">
+                            <img src="assets/img/others/breadcrumb_thumb7.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb-area-end -->
+
+    <!--==============================
+    Contact Page Area
+    ==============================-->
+    <section class="contact-page-area pt-120 pb-120">
+        <div class="container">
+            <div class="contact-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48409.69813174607!2d-74.05163325136718!3d40.68264649999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25bae694479a3%3A0xb9949385da52e69e!2sBarclays%20Center!5e0!3m2!1sen!2sbd!4v1684309529719!5m2!1sen!2sbd"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact-feature-grid mt-100">
+                <div class="contact-feature">
+                    <div class="contact-feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.0448 17.52C21.3892 16.9703 17.5448 14.5358 16.9058 14.6475C16.6058 14.7008 16.3763 14.9565 15.762 15.6893C15.4779 16.0499 15.166 16.3877 14.829 16.6995C14.2116 16.5504 13.614 16.3288 13.0485 16.0395C10.831 14.9599 9.03947 13.1679 7.9605 10.95C7.67118 10.3846 7.44964 9.78691 7.3005 9.1695C7.6123 8.83252 7.95009 8.52056 8.31075 8.2365C9.04275 7.62225 9.29925 7.39425 9.3525 7.09275C9.46425 6.45225 7.0275 2.60925 6.48 1.95375C6.2505 1.68225 6.042 1.5 5.775 1.5C5.001 1.5 1.5 5.829 1.5 6.39C1.5 6.43575 1.575 10.9425 7.26675 16.7333C13.0575 22.425 17.5642 22.5 17.61 22.5C18.171 22.5 22.5 18.999 22.5 18.225C22.5 17.958 22.3177 17.7495 22.0448 17.52Z"
+                                fill="currentColor" />
+                            <path
+                                d="M17.25 11.25H18.75C18.7482 9.65925 18.1155 8.13416 16.9907 7.00933C15.8658 5.8845 14.3408 5.25179 12.75 5.25V6.75C13.9431 6.75119 15.087 7.22568 15.9307 8.06933C16.7743 8.91299 17.2488 10.0569 17.25 11.25Z"
+                                fill="currentColor" />
+                            <path
+                                d="M21 11.25H22.5C22.497 8.66505 21.4688 6.18683 19.641 4.359C17.8132 2.53116 15.3349 1.50298 12.75 1.5V3C14.9372 3.00258 17.0342 3.8726 18.5808 5.41922C20.1274 6.96584 20.9974 9.06276 21 11.25Z"
+                                fill="currentColor" />
+                        </svg>
+                    </div>
+                    <div class="media-body">
+                        <a href="tel:12345678900" class="contact-feature_link">+(123) 456 789 00</a>
+                        <p class="contact-feature_label">phone number</p>
+                    </div>
+                </div>
+                <div class="contact-feature">
+                    <div class="contact-feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_5_2912)">
+                                <path d="M0 11.6104V22.8729L7.02541 16.2433C0.862305 12.1788 4.12894 14.3328 0 11.6104Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M16.9746 16.2433L23.9996 22.8729V11.6104C23.9967 11.6122 16.9774 16.2415 16.9746 16.2433Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M12.3884 19.2679C12.1533 19.4234 11.8466 19.4237 11.611 19.2679L8.23596 17.042L1.07031 23.8039H22.9291L15.764 17.042L12.3884 19.2679Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M11.6882 0.313889L9.72461 2.04514H14.2743L12.3106 0.313889C12.1328 0.157089 11.8661 0.157089 11.6882 0.313889Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M2.53265 11.59C2.53265 9.97184 2.53265 10.0618 2.53265 8.38525C0.904184 9.82083 1.34936 9.42836 0.453125 10.2187C0.453125 10.2187 1.50014 10.9093 2.53265 11.59Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M23.5463 10.2187C22.6654 9.44187 23.1752 9.89132 21.4668 8.38525V11.59C22.4978 10.9103 23.5463 10.2187 23.5463 10.2187Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M12.0004 17.833C14.3131 16.3081 17.3579 14.3 20.0554 12.521V3.92713C20.0554 3.66723 19.8447 3.45654 19.5848 3.45654H4.4159C4.15599 3.45654 3.94531 3.66723 3.94531 3.92713V12.521C10.9822 17.1619 8.31496 15.403 12.0004 17.833ZM8.37025 6.73466H15.6305C16.0201 6.73466 16.3364 7.0509 16.3364 7.44054C16.3364 7.83066 16.0201 8.14643 15.6305 8.14643H8.37025C7.98061 8.14643 7.66437 7.83066 7.66437 7.44054C7.66437 7.0509 7.98061 6.73466 8.37025 6.73466ZM7.66437 11.0052V11.0005C7.66437 10.6382 7.93825 10.3389 8.29025 10.2994H15.7105C16.0625 10.3389 16.3364 10.6382 16.3364 11.0005V11.0052C16.334 11.393 16.0187 11.7064 15.6305 11.7064H8.37025C7.98202 11.7064 7.66672 11.393 7.66437 11.0052Z"
+                                    fill="currentColor" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_5_2912">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="media-body">
+                        <a href="mailto:info@alvido.com" class="contact-feature_link">info@alvido.com</a>
+                        <p class="contact-feature_label">email address</p>
+                    </div>
+                </div>
+                <div class="contact-feature">
+                    <div class="contact-feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_5_2923)">
+                                <path
+                                    d="M12 0C9.61402 0.00316505 7.32668 0.952393 5.63953 2.63953C3.95239 4.32668 3.00317 6.61402 3 9C3 15.4613 11.385 23.5538 11.7413 23.895C11.8105 23.9623 11.9034 24 12 24C12.0966 24 12.1895 23.9623 12.2587 23.895C12.615 23.5538 21 15.4613 21 9C20.9968 6.61402 20.0476 4.32668 18.3605 2.63953C16.6733 0.952393 14.386 0.00316505 12 0ZM12 13.125C11.1842 13.125 10.3866 12.8831 9.70827 12.4298C9.02992 11.9766 8.50121 11.3323 8.189 10.5786C7.87679 9.82482 7.7951 8.99542 7.95426 8.19525C8.11343 7.39508 8.50629 6.66008 9.08318 6.08318C9.66008 5.50629 10.3951 5.11342 11.1953 4.95426C11.9954 4.7951 12.8248 4.87679 13.5786 5.189C14.3323 5.50121 14.9766 6.02992 15.4298 6.70827C15.8831 7.38663 16.125 8.18415 16.125 9C16.1243 10.0938 15.6895 11.1426 14.9161 11.9161C14.1426 12.6895 13.0938 13.1243 12 13.125Z"
+                                    fill="currentColor" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_5_2923">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="media-body">
+                        <a href="mailto:info@alvido.com" class="contact-feature_link">12/b, booston tower</a>
+                        <p class="contact-feature_label">london, uk</p>
+                    </div>
+                </div>
+                <div class="social__wrap style2">
+                    <ul class="list-wrap justify-content-start">
+                        <li>
+                            <a target="_blank" href="https://facebook.com/" tabindex="-1"><i
+                                    class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://twitter.com/" tabindex="-1"><i
+                                    class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://behance.com/" tabindex="-1"><i
+                                    class="fab fa-behance"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://youtube.com/" tabindex="-1"><i
+                                    class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact-page-area-end -->
+
+    <!--==============================
+    Contact Area
+    ==============================-->
+    <section class="contact-area-1 pt-120 pb-120 overflow-hidden black2-bg">
+        <div class="container">
+            <div class="section__title mb-60">
+                <h6 class="sub-title text-theme">let’s talk</h6>
+                <h2 class="title text-white">let’s have a chat with us</h2>
+            </div>
+            <div class="row gy-40">
+                <div class="col-lg-8">
+                    <div class="contact-form-wrap">
+                        <div class="section__title mb-30">
+                            <h4 class="title text-white">WHAT CAN WE DO FOR YOU?</h4>
+                        </div>
+                        <form action="mail.php" method="POST" class="contact__form ajax-contact">
+                            <div class="contact-form-check-wrap mb-60">
+                                <div class="form-check contact-form-check">
+                                    <input class="form-check-input" type="radio" name="contactRadio" id="contactRadio1"
+                                        value="option1" checked>
+                                    <label class="form-check-label" for="contactRadio1">
+                                        Design
+                                    </label>
+                                </div>
+                                <div class="form-check contact-form-check">
+                                    <input class="form-check-input" type="radio" name="contactRadio" id="contactRadio2"
+                                        value="option2">
+                                    <label class="form-check-label" for="contactRadio2">
+                                        Development
+                                    </label>
+                                </div>
+                                <div class="form-check contact-form-check">
+                                    <input class="form-check-input" type="radio" name="contactRadio" id="contactRadio3"
+                                        value="option3">
+                                    <label class="form-check-label" for="contactRadio3">
+                                        Animation
+                                    </label>
+                                </div>
+                                <div class="form-check contact-form-check">
+                                    <input class="form-check-input" type="radio" name="contactRadio" id="contactRadio4"
+                                        value="option4">
+                                    <label class="form-check-label" for="contactRadio4">
+                                        Other
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row gy-30">
+                                <div class="col-md-6 form-group">
+                                    <label class="form-icon-right text-theme"><i class="far fa-user"></i></label>
+                                    <input type="text" class="form-control style-border2" name="name" id="name"
+                                        placeholder="Your name">
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <label class="form-icon-right text-theme"><i
+                                            class="far fa-envelope-open"></i></label>
+                                    <input type="text" class="form-control style-border2" name="website" id="email"
+                                        placeholder="Info">
+                                </div>
+                                <div class="col-12 form-group">
+                                    <label class="form-icon-right text-theme"><i class="fas fa-pen"></i></label>
+                                    <textarea name="message" placeholder="Project details" id="contactForm"
+                                        class="form-control style-border2"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn mt-60">
+                                Working with us <i class="fas fa-arrow-right"></i>
+                                <span class="line1"></span>
+                                <span class="line2"></span>
+                                <span class="line3"></span>
+                                <span class="line4"></span>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-thumb mb-20">
+                        <img src="assets/img/others/contact-thumb1-1.png" alt="img">
+                    </div>
+                    <div class="section__title mb-0">
+                        <p class="sec-text text-white mt-0">Driven by innovation and creativity, we're constantly
+                            evolving and expanding our platform to bring you the latest and greatest in gaming. From
+                            exciting new releases to classic favorites.</p>
+                        <div class="social__wrap mt-40">
+                            <ul class="list-wrap justify-content-start">
+                                <li>
+                                    <a target="_blank" href="https://facebook.com/" tabindex="-1"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://twitter.com/" tabindex="-1"><i
+                                            class="fab fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://instagram.com/" tabindex="-1"><i
+                                            class="fab fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://google.com/" tabindex="-1"><i
+                                            class="fab fa-google"></i></a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://linkedin.com/" tabindex="-1"><i
+                                            class="fab fa-linkedin"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--======== / Contact Section ========-->
+
+</main>
+<!-- main-area-end -->
+
+{% include 'include/footer.html' %}
+<!-- footer-area-end -->
+<!-- JS here -->
+{% endblock %}

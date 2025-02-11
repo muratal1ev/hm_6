@@ -1,0 +1,311 @@
+{% extends 'include/homepage.html' %}
+{% load static %}
+{% block content %}
+<body>
+
+    <!--Preloader-->
+    {% include 'include/header.html' %}
+    <!-- header-area-end -->
+
+    <!-- main-area -->
+    <main class="fix">
+
+    <!--==============================
+    Breadcrumb Area
+    ==============================-->
+    <section class="breadcrumb__area fix" data-background="assets/img/bg/breadcrumb-bg.png">
+        <div class="breadcrumb__bg-1-1" data-background="assets/img/hero/hero-bg1-1.png"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-7">
+                    <div class="breadcrumb__content">
+                        <nav class="breadcrumb">
+                            <span property="itemListElement" typeof="ListItem">
+                                <a href="{% url 'index' %}">Главная</a>
+                            </span>
+                            <span class="breadcrumb-separator"><i class="fas fa-angle-right"></i></span>
+                            <span property="itemListElement" typeof="ListItem">
+                                <a href="{% url 'blog' %}">Блог</a>
+                            </span>
+                            <span class="breadcrumb-separator"><i class="fas fa-angle-right"></i></span>
+                            <span property="itemListElement" typeof="ListItem">{{ blog_detail.title }}</span>
+                        </nav>
+                        <h3 class="title">{{ blog_detail.title }}</h3>
+                    </div>
+                </div>
+                <div class="col-xl-5 d-xl-block d-none">
+                    <div class="breadcrumb__img">
+                        <div class="thumb">
+                            <img src="{% static 'assets/img/others/breadcrumb_thumb2.png' %}" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb-area-end -->
+
+    <!--==============================
+    Blog Details Area
+    ==============================-->
+    <section class="blog__details-area pt-120 pb-120 black2-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="blog__details-wrap">
+                        <div class="blog__details-thumb overflow-hidden">
+                            <div class="thumb gsap-parallax">
+                                <img src="{% static 'assets/img/blog/blog-details-1-1.jpg' %}" alt="img">
+                            </div>
+                        </div>
+                        <div class="blog__details-content">                         
+                            <p class="text-white mb-20" style="color: green;">{{ blog_detail.text1|safe }}</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="blog__details-thumb overflow-hidden">
+                                        <div class="thumb gsap-parallax">
+                                            <img src="{{ blog_detail.image1.url }}" alt="img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="blog__details-thumb overflow-hidden">
+                                        <div class="thumb gsap-parallax">
+                                            <img src="{{ blog_detail.image2.url }}" alt="img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-white mb-50">{{ blog_detail.text2|safe }}</p>
+                        </div>
+                        <div class="comments-wrap mt-60">
+                            <h3 class="comments-wrap-title mb-20 text-white">User Feedbacks <span class="text-theme">(06)</span></h3>
+                            <div class="latest-comments">
+                                <ul class="list-wrap">
+                                    <li>
+                                        
+                                        <div class="comments-box">
+                                            <div class="comments-avatar">
+                                                <img src="{% static 'assets/img/blog/comment01.png' %}" alt="img">
+                                            </div>
+                                            <div class="comments-text">
+                                                <div class="avatar-name">
+                                                    <h6 class="name">Tromas H. Hendson</h6>
+                                                    <span class="date ms-2 text-theme">June 9, 2024</span>
+                                                </div>
+                                                <p>Variations in the floor plan, window location, and interstitial outdoor spaces enhance this material homogeneity. The goal was to produce a unified whole using a modern design language, where attention to materiality and detail is evident. All flats have two sides and are in close proximity to the outside world.</p>
+                                                <a href="#" class="reply-btn"><div class="icon-btn"><i class="fas fa-reply"></i></div> Reply</a>
+                                            </div>
+                                        </div>
+                                        <ul class="children">
+                                            <li>
+                                                <div class="comments-box">
+                                                    <div class="comments-avatar">
+                                                        <img src="{% static 'assets/img/blog/comment02.png' %}" alt="img">
+                                                    </div>
+                                                    <div class="comments-text">
+                                                        <div class="avatar-name">
+                                                            <h6 class="name">Rosalina D.</h6>
+                                                            <span class="date ms-2 text-theme">June 10, 2024</span>
+                                                        </div>
+                                                        <p>Variations in the floor plan, window location, and interstitial outdoor spaces enhance this material homogeneity. The goal was to produce a unified whole using a modern design language, where attention to materiality and detail is evident.</p>
+                                                        <a href="#" class="reply-btn"><div class="icon-btn"><i class="fas fa-reply"></i></div> Reply</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="comments-box">
+                                            <div class="comments-avatar">
+                                                <img src="{% static 'assets/img/blog/comment01.png' %}" alt="img">
+                                            </div>
+                                            <div class="comments-text">
+                                                <div class="avatar-name">
+                                                    <h6 class="name">Tromas H. Hendson</h6>
+                                                    <span class="date ms-2 text-theme">June 9, 2024</span>
+                                                </div>
+                                                <p>Variations in the floor plan, window location, and interstitial outdoor spaces enhance this material homogeneity. The goal was to produce a unified whole using a modern design language, where attention to materiality and detail is evident. All flats have two sides and are in close proximity to the outside world.</p>
+                                                <a href="#" class="reply-btn"><div class="icon-btn"><i class="fas fa-reply"></i></div> Reply</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="comment-respond">
+                            <h3 class="comment-reply-title mb-20 text-white">Add Feedback & Reviews</h3>
+                            <form method="post" class="comment-form" style="background-color: aliceblue;">
+                                {% csrf_token %}
+                                {{ form.as_p }}
+                                <button type="submit" class="btn mt-30">get in touch 
+                                    <i class="fas fa-arrow-right"></i>
+                                    <span class="line1"></span>
+                                    <span class="line2"></span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <aside class="blog-sidebar">
+                        <div class="blog-widget">
+                            <div class="sidebar-search-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Search Here...">
+                                    <button type="submit"><i class="fas fa-search"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="blog-widget">
+                            <h4 class="widget-title">keyword</h4>
+                            <div class="sidebar-cat-list">
+                                <ul class="list-wrap">
+                                    <li><a href="#">T-shirt <span>(10)</span></a></li>
+                                    <li><a href="#">Table Fan <span>(03)</span></a></li>
+                                    <li><a href="#">Charity Book <span>(09)</span></a></li>
+                                    <li><a href="#">Water Glass <span>(17)</span></a></li>
+                                    <li><a href="#">PC <span>(33)</span></a></li>
+                                    <li><a href="#">Monitor <span>(02)</span></a></li>
+                                    <li><a href="#">Mobile <span>(41)</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="blog-widget widget-rc-post">
+                            <h4 class="widget-title">recent post</h4>
+                            <div class="rc-post-wrap">
+                                <div class="rc-post-item">
+                                    <div class="thumb">
+                                        <a href="blog-details.html"><img src="{% static 'assets/img/blog/rc_post01.jpg' %}" alt="img"></a>
+                                    </div>
+                                    <div class="content">
+                                        <span class="date"><i class="fas fa-calendar-alt"></i> OCT 26, 2024</span>
+                                        <h4 class="title"><a href="blog-details.html">These methods are often integrated</a></h4>
+                                    </div>
+                                </div>
+                                <div class="rc-post-item">
+                                    <div class="thumb">
+                                        <a href="blog-details.html"><img src="{% static 'assets/img/blog/rc_post02.jpg' %}" alt="img"></a>
+                                    </div>
+                                    <div class="content">
+                                        <span class="date"><i class="fas fa-calendar-alt"></i> NOV 20, 2024</span>
+                                        <h4 class="title"><a href="blog-details.html">These methods are often integrated</a></h4>
+                                    </div>
+                                </div>
+                                <div class="rc-post-item">
+                                    <div class="thumb">
+                                        <a href="blog-details.html"><img src="{% static 'assets/img/blog/rc_post03.jpg' %}" alt="img"></a>
+                                    </div>
+                                    <div class="content">
+                                        <span class="date"><i class="fas fa-calendar-alt"></i> DEC 15, 2024</span>
+                                        <h4 class="title"><a href="blog-details.html">These methods are often integrated</a></h4>
+                                    </div>
+                                </div>
+                                <div class="rc-post-item">
+                                    <div class="thumb">
+                                        <a href="blog-details.html"><img src="{% static 'assets/img/blog/rc_post04.jpg' %}" alt="img"></a>
+                                    </div>
+                                    <div class="content">
+                                        <span class="date"><i class="fas fa-calendar-alt"></i> DEC 25, 2024</span>
+                                        <h4 class="title"><a href="blog-details.html">These methods are often integrated</a></h4>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="blog-widget">
+                            <h4 class="widget-title">instagram</h4>
+                            <div class="sidebar-insta-feed-list">
+                                <ul class="list-wrap">
+                                    <li>
+                                        <div class="insta-thumb">
+                                            <img src="{% static 'assets/img/blog/ins_post01.jpg' %}" alt="Image">
+                                            <a href="instagram.com" class="icon-btn"><i class="fab fa-instagram"></i></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="insta-thumb">
+                                            <img src="{% static 'assets/img/blog/ins_post02.jpg' %}" alt="Image">
+                                            <a href="instagram.com" class="icon-btn"><i class="fab fa-instagram"></i></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="insta-thumb">
+                                            <img src="{% static 'assets/img/blog/ins_post03.jpg' %}" alt="Image">
+                                            <a href="instagram.com" class="icon-btn"><i class="fab fa-instagram"></i></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="insta-thumb">
+                                            <img src="{% static 'assets/img/blog/ins_post04.jpg' %}" alt="Image">
+                                            <a href="instagram.com" class="icon-btn"><i class="fab fa-instagram"></i></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="insta-thumb">
+                                            <img src="{% static 'assets/img/blog/ins_post05.jpg' %}" alt="Image">
+                                            <a href="instagram.com" class="icon-btn"><i class="fab fa-instagram"></i></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="insta-thumb">
+                                            <img src="{% static 'assets/img/blog/ins_post06.jpg' %}" alt="Image">
+                                            <a href="instagram.com" class="icon-btn"><i class="fab fa-instagram"></i></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="insta-thumb">
+                                            <img src="{% static 'assets/img/blog/ins_post07.jpg' %}" alt="Image">
+                                            <a href="instagram.com" class="icon-btn"><i class="fab fa-instagram"></i></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="insta-thumb">
+                                            <img src="{% static 'assets/img/blog/ins_post08.jpg' %}" alt="Image">
+                                            <a href="instagram.com" class="icon-btn"><i class="fab fa-instagram"></i></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="insta-thumb">
+                                            <img src="{% static 'assets/img/blog/ins_post09.jpg' %}" alt="Image">
+                                            <a href="instagram.com" class="icon-btn"><i class="fab fa-instagram"></i></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="blog-widget">
+                            <h4 class="widget-title">subscribe now</h4>
+                            <form action="mail.php" method="POST" class="widget-contact-form ajax-contact">
+                                <div class="form-group mb-10">
+                                    <label class="form-icon-left text-theme"><i class="fas fa-user"></i></label>
+                                    <input type="text" class="form-control style-dark" name="name" id="name" placeholder="Your Name">
+                                </div>
+                                <div class="form-group mb-10">
+                                    <label class="form-icon-left text-theme"><i class="fas fa-envelope-open"></i></label>
+                                    <input type="text" class="form-control style-dark" name="email" id="email" placeholder="Email Address">
+                                </div>
+                                <div class="form-btn mt-20">
+                                    <button class="btn">subscribe
+                                        <i class="fas fa-arrow-right"></i>
+                                        <span class="line1"></span>
+                                        <span class="line2"></span>
+                                    </button>
+                                </div>
+                                <p class="form-messages mb-0 mt-3"></p>
+                            </form>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blog-details-area-end -->
+    </main>
+    <!-- main-area-end -->
+    <!-- footer-area -->
+        {% include 'include/footer.html' %}
+
+    <!-- footer-area-end -->
+
+    {% endblock %}

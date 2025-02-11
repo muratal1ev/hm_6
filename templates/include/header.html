@@ -1,0 +1,172 @@
+{% load static %}
+
+<div id="preloader" class="black2-bg">
+    <div id="loader" class="loader">
+        <div class="loader-container">
+            <div class="loader-icon"><img src="assets/img/logo/preloader.svg" alt="Preloader"></div>
+        </div>
+    </div>
+</div>
+<!--Preloader-end -->
+
+<!-- header-search -->
+<div class="popup-search-box">
+    <button class="searchClose"><img src="assets/img/icon/close.svg" alt="img"></button>
+    <form action="#">
+        <input type="text" placeholder="Search Here..">
+        <button type="submit"><img src="assets/img/icon/search-white.svg" alt="img"></button>
+    </form>
+</div>
+<!-- header-search-end -->
+
+<!-- Scroll-top -->
+<button class="scroll__top scroll-to-target" data-target="html">
+    <i class="fas fa-arrow-up"></i>
+</button>
+<!-- Scroll-top-end-->
+
+<!-- header-area -->
+<header>
+    <div id="sticky-header" class="tg-header__area transparent-header tg-header__area-three">
+        <div class="container custom-container2">
+            <div class="row">
+                <div class="col-12">
+                    <div class="tgmenu__wrap">
+                        <nav class="tgmenu__nav">
+                            <div class="logo">
+                                <a href="{% url 'index' %}"><img src="assets/img/logo/logo-white.svg" alt="Logo"></a>
+                            </div>
+                            <div class="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">
+                                <ul class="navigation">
+                                    <li class="active menu-item-has-children"><a href="{% url 'index' %}">HOME</a>
+                                        <ul class="sub-menu">
+                                            <li class="active"><a href="{% url 'index' %}">HOME </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children"><a href="#">PAGES</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="about.html">ABOUT</a></li>
+                                            <li><a href="service.html">SERVICE</a></li>
+                                            <li><a href="service-details.html">SERVICE DETAILS</a></li>
+                                            <li><a href="shop.html">SHOP</a></li>
+                                            <li><a href="shop-details.html">SHOP DETAILS</a></li>
+                                            <li><a href="job.html">JOB POST</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children"><a href="#">PROJECT</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="project.html">PROJECT</a></li>
+                                            <li><a href="project-details.html">PROJECT DETAILS</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children"><a href="#">INSIGHTS</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="{% url 'blog' %}">BLOG</a></li>
+                                            <li><a href="blog-details.html">BLOG DETAILS</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="{% url 'contact' %}">CONTACT</a></li>
+                                </ul>
+                            </div>
+                            <div class="tgmenu__action d-none d-md-block">
+                                <ul class="list-wrap">
+                                    <li class="link d-none d-xl-block"><a href="javascript:void(0)">info@alvido.com</a>
+                                    </li>
+                                    <li class="search">
+                                        <button type="button" class="searchBoxToggler">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </li>
+                                    <li class="offCanvas-menu">
+                                        <a href="javascript:void(0)" class="menu-tigger sidebar-btn">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0 0H5V5H0V0ZM7.5 0H12.5V5H7.5V0ZM15 0H20V5H15V0ZM0 7.5H5V12.5H0V7.5ZM7.5 7.5H12.5V12.5H7.5V7.5ZM15 7.5H20V12.5H15V7.5ZM0 15H5V20H0V15ZM7.5 15H12.5V20H7.5V15ZM15 15H20V20H15V15Z"
+                                                    fill="currentColor" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mobile-nav-toggler">
+                                <a href="javascript:void(0)" class="sidebar-btn">
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu  -->
+    <div class="tgmobile__menu">
+        <nav class="tgmobile__menu-box">
+            <div class="close-btn"><i class="fas fa-times"></i></div>
+            <div class="nav-logo">
+                <a href="index.html"><img src="assets/img/logo/logo-white.svg" alt="Logo"></a>
+            </div>
+            <div class="tgmobile__menu-outer">
+                <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+            </div>
+            <div class="tgmobile__menu-bottom">
+                <div class="contact-info">
+                    <ul class="list-wrap">
+                        <li>Our mission is to create a vibrant & inclusive.</li>
+                        <li>
+                            <a href="contact.html" class="btn">
+                                GET IN TOUCH <i class="fas fa-arrow-right"></i>
+                                <span class="line1"></span>
+                                <span class="line2"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="tgmobile__menu-backdrop"></div>
+    <!-- End Mobile Menu -->
+
+    <!-- offCanvas-menu -->
+    <div class="offCanvas__info">
+        <div class="offCanvas__close-icon menu-close">
+            <button><i class="fas fa-times"></i></button>
+        </div>
+        <div class="offCanvas__logo mb-30">
+            <a href="index.html"><img src="assets/img/logo/logo-white.svg" alt="Logo"></a>
+        </div>
+        <div class="offCanvas__side-info mb-30">
+            <div class="contact-list mb-30">
+                <h4>Office Address</h4>
+                <p>123/A, Miranda City Likaoli <br> Prikano, Dope</p>
+            </div>
+            <div class="contact-list mb-30">
+                <h4>Phone Number</h4>
+                <p>+0989 7876 9865 9</p>
+                <p>+(090) 8765 86543 85</p>
+            </div>
+            <div class="contact-list mb-30">
+                <h4>Email Address</h4>
+                <p>info@example.com</p>
+                <p>example.mail@hum.com</p>
+            </div>
+        </div>
+        <div class="offCanvas__social-icon mt-30">
+            <ul class="list-wrap">
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="offCanvas__overly"></div>
+    <!-- offCanvas-menu-end -->
+
+</header>
